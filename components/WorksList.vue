@@ -28,8 +28,8 @@
 export default {
   props: {
     works: {
-      type: Array,
-      default: () => []
+      type: Object,
+      default: () => {}
     }
   },
 }
