@@ -4,10 +4,13 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: '森のポートフォリオ',
+    // title要素用のテンプレート（%sにpages内のhead関数で定義しているtitleが入る）
+    titleTemplate: '%s - 森のポートフォリオ',
+    // サイト全体のhtml要素のlang属性を指定
     htmlAttrs: {
       lang: 'ja',
     },
+    // サイト全体のmeta要素を指定する（hidが指定されているものはpages内で上書き可能）
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

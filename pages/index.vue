@@ -77,6 +77,11 @@ export default {
       works,
     }
   },
+  head () {
+    return {
+      title: 'ようこそ！',
+    }
+  },
 }
 </script>
 

@@ -15,12 +15,22 @@
 
 <script>
 export default {
+  // ページ表示前に動作する
   async asyncData({ $microcms }) {
+    // microCMSからデータを取得
+    // async と await は対になる命令。非同期通信をするときに使います。
+    // awaitを記述した通信が終わると、asyncは完了します。
     const works = await $microcms.get({
       endpoint: 'blog',
     })
     return {
       works,
+    }
+  },
+  // head要素内の定義
+  head () {
+    return {
+      title: 'Works',
     }
   },
 }

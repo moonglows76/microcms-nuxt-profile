@@ -95,6 +95,11 @@ export default {
       work,
     }
   },
+  head () {
+    return {
+      title: `${this.work.title} - Works`,
+    }
+  },
 }
 </script>
 
